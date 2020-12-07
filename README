@@ -1,0 +1,16 @@
+In order to run the file you can simply run from the command line:
+python octaveTechnicalTest.py
+
+Output will be printed on the command line.
+By default it will use the constraints specified in the technical test, but can be passed arguments if you want to
+test other constraints
+
+The available arguments are:
+asteroid info start date:   YYYY-MM-DD
+asteroid info end date:     YYYY-MM-DD (Feed date limit is 1 week)
+velocity stats start date:  YYYY-MM-DD
+velocity stats end date:    YYYY-MM-DD (Feed date limit is 1 week)
+number of recent potentially hazardous asteroids: integer
+
+An example of running with arguments would be:
+python octaveTechnicalTest.py 2020-01-01 2020-01-08 2020-05-13 2020-05-20 5
