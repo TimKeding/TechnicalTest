@@ -61,7 +61,7 @@ def getVelocityStatistics(startDate, endDate):
         for asteroidDict in asteroidData:
             velocities.append(float(asteroidDict['close_approach_data'][0]['relative_velocity']['kilometers_per_second']))
 
-    # Emailed Tory, it was unclear if built in functions included max/min/mean/median, which make this extremely easy,
+    # Emailed Troy, it was unclear if built in functions included max/min/mean/median, which make this extremely easy,
     # so just to be safe, I will show both ways
     velocities.sort()
     print('Highest velocity:\tby hand: ' + str(velocities[-1]) + '\tby function: ' + str(max(velocities)))
